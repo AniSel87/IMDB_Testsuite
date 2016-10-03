@@ -14,20 +14,18 @@ import com.imdb.test.pages.*;
 import com.imdb.test.util.*;
 
 public  class Test_Cases extends TestBase {
-
-
 	
 	@Test 
-	public void TC_1() {
+	public void TC_1() throws Exception {
 				
-		//Verify Result		
+		//verification of IMDb chart top 250 page returns at least 1 
 		int TC1_result = Imdb_Test_Util.verify(driver);		
 		Assert.assertTrue(TC1_result>0);		 
 	}
 			
 	@Test 
-		public void TC_2(){		
-		
+	//check of IMDb chart top 250 page returns at least 1 for each sort option
+		public void TC_2() throws Exception{		
 		List<WebElement> slists = Imdb_Top_chart_Page.Top_chart_sorting(driver);					
 		java.util.Iterator<WebElement> i = slists.iterator();		
 		while(i.hasNext()) {			
@@ -46,9 +44,9 @@ public  class Test_Cases extends TestBase {
 	
 	
 	@Test
-	public void TC_3(){	
+	public void TC_3() throws Exception{	
 		
-		//Action Click Western Genre Link
+		//Navigating to Western genre and checking if atleast one movie is displayed
 		
 		List<WebElement> Genre_Qlinks = Imdb_Top_chart_Page.Top_chart_genre_select(driver);
 		
@@ -56,7 +54,7 @@ public  class Test_Cases extends TestBase {
 		
 		Assert.assertEquals("link clicked", Action);
 			
-		// Action Click Each Sort option			
+		// checking if atleast one movie is displayed for each sorting option of Western genre			
 		List<WebElement> Genre_slist = Imdb_Top_chart_Page.Top_chart_genre_sorting(driver);	
 		for(int ia=1;ia<Genre_slist.size()+1;ia++){		
 		String Sort_path = "//*[@id='main']/div/div/div[2]/a["+ia+"]" ;				

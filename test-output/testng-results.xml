@@ -2,28 +2,32 @@
 <testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="77757" started-at="2016-10-03T12:15:23Z" finished-at="2016-10-03T12:16:41Z">
+  <suite name="Default suite" duration-ms="73400" started-at="2016-10-03T19:47:23Z" finished-at="2016-10-03T19:48:37Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="77757" started-at="2016-10-03T12:15:23Z" finished-at="2016-10-03T12:16:41Z">
+    <test name="Default test" duration-ms="73400" started-at="2016-10-03T19:47:23Z" finished-at="2016-10-03T19:48:37Z">
       <class name="com.imdb.test.testcase.Test_Cases">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.imdb.test.testcase.Test_Cases@2344fc66]" name="setup" is-config="true" duration-ms="18422" started-at="2016-10-03T14:15:23Z" finished-at="2016-10-03T14:15:42Z">
+        <test-method status="PASS" signature="FileReader()[pri:0, instance:com.imdb.test.testcase.Test_Cases@458ad742]" name="FileReader" is-config="true" duration-ms="22" started-at="2016-10-03T21:47:23Z" finished-at="2016-10-03T21:47:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FileReader -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.imdb.test.testcase.Test_Cases@458ad742]" name="setup" is-config="true" duration-ms="17404" started-at="2016-10-03T21:47:23Z" finished-at="2016-10-03T21:47:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="TC_1()[pri:0, instance:com.imdb.test.testcase.Test_Cases@2344fc66]" name="TC_1" duration-ms="421" started-at="2016-10-03T14:15:42Z" finished-at="2016-10-03T14:15:42Z">
+        <test-method status="PASS" signature="TC_1()[pri:0, instance:com.imdb.test.testcase.Test_Cases@458ad742]" name="TC_1" duration-ms="381" started-at="2016-10-03T21:47:41Z" finished-at="2016-10-03T21:47:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_1 -->
-        <test-method status="PASS" signature="TC_2()[pri:0, instance:com.imdb.test.testcase.Test_Cases@2344fc66]" name="TC_2" duration-ms="23861" started-at="2016-10-03T14:15:42Z" finished-at="2016-10-03T14:16:06Z">
+        <test-method status="PASS" signature="TC_2()[pri:0, instance:com.imdb.test.testcase.Test_Cases@458ad742]" name="TC_2" duration-ms="22952" started-at="2016-10-03T21:47:41Z" finished-at="2016-10-03T21:48:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_2 -->
-        <test-method status="PASS" signature="TC_3()[pri:0, instance:com.imdb.test.testcase.Test_Cases@2344fc66]" name="TC_3" duration-ms="31833" started-at="2016-10-03T14:16:06Z" finished-at="2016-10-03T14:16:38Z">
+        <test-method status="PASS" signature="TC_3()[pri:0, instance:com.imdb.test.testcase.Test_Cases@458ad742]" name="TC_3" duration-ms="31584" started-at="2016-10-03T21:48:04Z" finished-at="2016-10-03T21:48:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_3 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.imdb.test.testcase.Test_Cases@2344fc66]" name="tearDown" is-config="true" duration-ms="3146" started-at="2016-10-03T14:16:38Z" finished-at="2016-10-03T14:16:41Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.imdb.test.testcase.Test_Cases@458ad742]" name="tearDown" is-config="true" duration-ms="1016" started-at="2016-10-03T21:48:36Z" finished-at="2016-10-03T21:48:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

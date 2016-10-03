@@ -1,36 +1,41 @@
 package com.imdb.test.pages;
 
 import java.util.List;
+import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
+import com.imdb.test.*;
+import com.imdb.test.testcase.TestBase;
 
-public class Imdb_Top_chart_Page {
+
+public class Imdb_Top_chart_Page extends TestBase {
 	
 
-	
-	public static List<WebElement> Top_chart_sorting(WebDriver driver) {
+	//Getting Sort items from Top chart 250 page
+	public static List<WebElement> Top_chart_sorting(WebDriver driver) throws Exception {
 		
-		WebElement sortlist_select = driver.findElement(By.xpath("//select[@class='lister-sort-by']"));
+		WebElement sortlist_select = driver.findElement(By.xpath(getPropData("Top250_Page_Sort_list")));
 		List<WebElement> slists = sortlist_select.findElements(By.tagName("option"));		
 		return slists;
 	}	
 	
-	public static List<WebElement> Top_chart_genre_select (WebDriver driver ) {
+	//Getting all quick links of top movie by genre
+	public static List<WebElement> Top_chart_genre_select (WebDriver driver ) throws Exception {
 		
-		WebElement Genre_Qlink = driver.findElement(By.xpath("//*[@id='sidebar']/div[6]/span/ul"));
+		WebElement Genre_Qlink = driver.findElement(By.xpath(getPropData("Movie_Genre_Quicklinks")));
 		List<WebElement> Genre_Qlinks = Genre_Qlink.findElements(By.tagName("li"));
 		return Genre_Qlinks ;
 
 	}	
 	
-
-	public static List<WebElement> Top_chart_genre_sorting (WebDriver driver) {	
+    //Getting all sorting options of Western genre 
+	public static List<WebElement> Top_chart_genre_sorting (WebDriver driver) throws Exception {	
 		
-		WebElement sortlist_select = driver.findElement(By.xpath("//*[@id='main']/div/div/div[2]")); 	
+		WebElement sortlist_select = driver.findElement(By.xpath(getPropData("Top_Genre_Sort_list"))); 	
 	   	List<WebElement> Genre_links = sortlist_select.findElements(By.tagName("a")); 	   	 	
 	   	return Genre_links;   	
 		
