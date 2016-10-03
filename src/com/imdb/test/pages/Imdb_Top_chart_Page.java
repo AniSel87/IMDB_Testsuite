@@ -12,10 +12,9 @@ import com.imdb.test.*;
 import com.imdb.test.testcase.TestBase;
 
 
-public class Imdb_Top_chart_Page extends TestBase {
-	
+public class Imdb_Top_chart_Page extends TestBase {	
 
-	//Getting Sort items from Top chart 250 page
+	//Getting Sort items elements of Top chart 250 page
 	public static List<WebElement> Top_chart_sorting(WebDriver driver) throws Exception {
 		
 		WebElement sortlist_select = driver.findElement(By.xpath(getPropData("Top250_Page_Sort_list")));
@@ -23,7 +22,7 @@ public class Imdb_Top_chart_Page extends TestBase {
 		return slists;
 	}	
 	
-	//Getting all quick links of top movie by genre
+	//Getting quick links elements of top movie by genre
 	public static List<WebElement> Top_chart_genre_select (WebDriver driver ) throws Exception {
 		
 		WebElement Genre_Qlink = driver.findElement(By.xpath(getPropData("Movie_Genre_Quicklinks")));
@@ -32,7 +31,7 @@ public class Imdb_Top_chart_Page extends TestBase {
 
 	}	
 	
-    //Getting all sorting options of Western genre 
+    //Getting sorting options elements of Western genre 
 	public static List<WebElement> Top_chart_genre_sorting (WebDriver driver) throws Exception {	
 		
 		WebElement sortlist_select = driver.findElement(By.xpath(getPropData("Top_Genre_Sort_list"))); 	
